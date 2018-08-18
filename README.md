@@ -4,8 +4,8 @@ Sandbox Ubuntu Image
 This ubuntu image attempts to immitate a standard (non docker) ubuntu 
 workstation.
 
-It contains the essential packages pre-installed, and a non root user, 
-with sudo privileges named `ubuntu`
+It contains the essential packages pre-installed, and a non root user
+(with `sudo` privileges) named `ubuntu`
 
 
 Usage
@@ -28,3 +28,9 @@ USER root
 
 USER ubuntu
 ```
+
+---
+
+- [On Docker Hub](https://hub.docker.com/r/dannyben/ubuntu/)
+- [On GitHub](https://github.com/DannyBen/docker-ubuntu)
+
