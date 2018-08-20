@@ -1,7 +1,18 @@
 FROM ubuntu
 
+# Packages
+ENV PACKAGES \
+  apt-transport-https \
+  apt-utils \
+  bash-completion \
+  build-essential \
+  curl \
+  git \
+  sudo \
+  vim \
+  wget
+
 # Environment
-ENV PACKAGES curl wget git sudo vim apt-transport-https build-essential
 ENV TERM=linux
 ENV PS1 "\n\n>> ubuntu \W \$ "
 
