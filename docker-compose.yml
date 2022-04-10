@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  bash:
+    build: .
+    image: dannyben/ubuntu
+
+  version:
+    image: dannyben/ubuntu
+    command: bash -c "cat /etc/os-release |grep VERSION="
