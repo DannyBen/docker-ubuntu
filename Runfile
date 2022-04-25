@@ -1,0 +1,20 @@
+title   "Ruby Alpine Docker Toolbelt"
+
+ubuntu_version = "jammy"
+
+command :docker
+
+help   "Build the docker images"
+action :build, :b do
+  system "docker build -t dannyben/ubuntu ."
+  system "docker tag dannyben/ubuntu dannyben/ubuntu:#{ubuntu_version}"
+  system "docker images |grep dannyben/ubuntu"
+end
+
+help   "Push the docker images to Docker Hub"
+action :push, :p do
+  system "docker push dannyben/ubuntu"
+  system "docker push dannyben/ubuntu:#{ubuntu_version}"
+end
+
+endcommand

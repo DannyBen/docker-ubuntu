@@ -1,9 +1,7 @@
-version: '3'
-
 services:
-  bash:
-    build: .
+  latest:
     image: dannyben/ubuntu
+    build: .
 
   version:
     image: dannyben/ubuntu

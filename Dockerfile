@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:jammy
 
 # Packages
 ENV PACKAGES \
