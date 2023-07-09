@@ -2,8 +2,6 @@ title   "Ruby Alpine Docker Toolbelt"
 
 ubuntu_version = "jammy"
 
-command :docker
-
 help   "Build the docker images"
 action :build, :b do
   system "docker build -t dannyben/ubuntu ."
@@ -16,5 +14,3 @@ action :push, :p do
   system "docker push dannyben/ubuntu"
   system "docker push dannyben/ubuntu:#{ubuntu_version}"
 end
-
-endcommand
