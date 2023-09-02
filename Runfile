@@ -1,4 +1,4 @@
-title   "Ruby Alpine Docker Toolbelt"
+title   "Ubuntu Docker Toolbelt"
 
 ubuntu_version = "jammy"
 
