@@ -1,6 +1,6 @@
 title   "Ubuntu Docker Toolbelt"
 
-ubuntu_version = "jammy"
+ubuntu_version = "noble"
 
 help   "Build the docker images"
 action :build, :b do
